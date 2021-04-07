@@ -1,0 +1,7 @@
+{
+  "name": "Register",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
