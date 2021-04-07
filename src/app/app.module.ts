@@ -8,6 +8,20 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 
+import firebase from 'firebase';
+
+var firebaseConfig = {
+  apiKey: "AIzaSyASvnD-6XxUasxGNpyENr-KzmdQDIY6fRY",
+  authDomain: "register-3ca0c.firebaseapp.com",
+  projectId: "register-3ca0c",
+  storageBucket: "register-3ca0c.appspot.com",
+  messagingSenderId: "1019656276577",
+  appId: "1:1019656276577:web:4fdc1a2ced83922105b820",
+  measurementId: "G-3V0D256D80"
+};
+
+firebase.initializeApp(firebaseConfig);
+
 @NgModule({
   declarations: [
     MyApp,
