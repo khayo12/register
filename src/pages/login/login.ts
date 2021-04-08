@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
 import firebase from 'firebase';
+import { AttendancePage } from '../attendance/attendance';
 
 @Component({
   selector: 'page-login',
@@ -24,6 +25,8 @@ export class LoginPage {
         message: "Welcome " + user.displayName,
         duration: 3000
       }).present();
+
+      this.navCtrl.setRoot(AttendancePage);
 
     }).catch((err) => {
       console.log(err)

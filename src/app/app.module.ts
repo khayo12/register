@@ -7,6 +7,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
+import { AttendancePage } from '../pages/attendance/attendance';
+import { OnePage } from '../pages/one/one';
+import { TwoPage } from '../pages/two/two';
+import { ThreePage } from '../pages/three/three';
+import { FourPage } from '../pages/four/four';
+import { FivePage } from '../pages/five/five';
+import { SixPage } from '../pages/six/six';
 
 import firebase from 'firebase';
 
@@ -26,7 +33,14 @@ firebase.initializeApp(firebaseConfig);
   declarations: [
     MyApp,
     LoginPage,
-    SignupPage
+    SignupPage,
+    AttendancePage,
+    OnePage,
+    TwoPage,
+    ThreePage,
+    FourPage,
+    FivePage,
+    SixPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +50,14 @@ firebase.initializeApp(firebaseConfig);
   entryComponents: [
     MyApp,
     LoginPage,
-    SignupPage
+    SignupPage,
+    AttendancePage,
+    OnePage,
+    TwoPage,
+    ThreePage,
+    FourPage,
+    FivePage,
+    SixPage
   ],
   providers: [
     StatusBar,
